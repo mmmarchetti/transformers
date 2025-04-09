@@ -51,7 +51,7 @@ def main(def_args=sys.argv[1:]):
     if repository is not None:
         run(['git', 'remote', 'add', 'origin', repository])
         run(['git', 'branch', '-M', 'main'])
-        run(['git', 'push', '-u', 'origin', 'main'])
+        run(['git', 'push', '-u', 'origin', 'main', '--force'])
 
     print('\nRepository generation ' +
           '\x1b[6;30;42mcompleted successfully\x1b[0m!')
